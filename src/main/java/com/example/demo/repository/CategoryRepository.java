@@ -8,6 +8,6 @@ import com.example.demo.model.Category;
 
 public interface CategoryRepository extends MongoRepository<Category, String>{
     
-    // Get category by user
+    // Get category by user- creating query aut
     List<Category> findByUserId(String userId);
 }
