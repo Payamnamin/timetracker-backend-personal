@@ -26,4 +26,9 @@ public class TimeEntryService {
     public List<TimeEntry> getAllTimeEntries(String userId) {
         return repository.findByUserId(userId);
     }
+
+    public void deleteTimeEntry(String id) {
+        repository.deleteById(id);
+    }
+    
 }
