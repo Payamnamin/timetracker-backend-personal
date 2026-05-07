@@ -19,6 +19,10 @@ public class TimeEntryService {
         return repository.save(timeEntry);
     }
 
+    public List<TimeEntry> getTimeEntriesByUser(String userId) {
+        return repository.findByUserId(userId);
+    }
+
     public List<TimeEntry> getAllTimeEntries(String userId) {
         return repository.findByUserId(userId);
     }
