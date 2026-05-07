@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -31,5 +32,11 @@ public class TimeEntryController {
     public List<TimeEntry> getTimeEntriesByUser(@PathVariable String userId) {
 
         return service.getTimeEntriesByUser(userId);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteTimeEntry(@PathVariable String id) {
+
+        service.deleteTimeEntry(id);
     }
 }
