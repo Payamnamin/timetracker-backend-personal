@@ -1,6 +1,5 @@
 package com.example.demo.model;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import org.springframework.data.annotation.Id;
@@ -20,7 +19,7 @@ public class TimeEntry {
 
     }
 
-    public TimeEntry(String id, String userId, String categoryId, LokalDateTime startTime, LocalDateTime endTime) {
+    public TimeEntry(String id, String userId, String categoryId, LocalDateTime startTime, LocalDateTime endTime) {
         this.id = id;
         this.userId = userId;
         this.categoryId = categoryId;
