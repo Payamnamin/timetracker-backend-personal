@@ -1,1 +1,23 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ftCAFTC3)
+# TimeTracker Backend
+
+Backend for the TimeTracker application built with Spring Boot and MongoDB.
+
+## Features
+
+- Create categories
+- Create time entries
+- Delete time entries
+- Fetch categories and entries
+- Store data in MongoDB Atlas
+
+## Tech Stack
+
+- Java
+- Spring Boot
+- MongoDB Atlas
+- Maven
+
+## Run the project
+
+```bash
+mvn spring-boot:run
